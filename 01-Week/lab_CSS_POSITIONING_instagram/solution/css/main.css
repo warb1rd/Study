@@ -1,0 +1,77 @@
+body {
+  background: #fff url("../images/bgtile.png") repeat-x;
+  font: 200 16px/1.5 "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+/* uncomment below to see all the boxes! */
+* { border: 1px solid red; }
+
+main {
+  margin: 90px auto 0; /* top left/right bottom */
+  width:  880px;
+}
+
+/* all of main's children should flow like text */
+main > * {
+  display: inline-block;
+}
+
+.content {
+  background: url("../images/frame.png") no-repeat;
+
+  width:      424px;
+  min-height: 204px;
+
+  padding: 40px 40px 0; /* top left/right bottom */
+}
+
+.content h2 {
+  color:       #06365f;
+  font-size:   27px;
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+.content p {
+  margin: 10px 0;
+}
+
+.content a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top:   30px;
+  text-decoration: none;
+}
+
+footer ul {
+  /* get rid of bullets and indent */
+  list-style: none;
+  padding: 0;
+
+  /* center text inside of this ul */
+  text-align: center;
+
+  margin: 30px 0 60px;
+}
+
+footer li {
+  /* force the items to flow like text */
+  display: inline;
+
+  color:          #999;
+  font-size:      11px;
+  font-weight:    bold;
+  text-transform: uppercase;
+
+  margin: 0 10px;
+}
+
+footer a {
+  color:           #1c5380;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
